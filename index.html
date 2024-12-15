@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Ji Monsales</title>
+</head>
+<body>
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="more">
+                <a href="contact.html" class="btn">Back</a>
+            </div>
+            
+            <div class="grid-4">
+                <div class="grid-4-col">
+                    <h3 class="title-sm">About</h3>
+                    <img src="./logo/Logo maker project.png" alt="" class="logo1">
+                    <p class="text1">
+                        "innovate software solution to optimized your business."
+                    </p>
+                </div>
+    
+                <div class="grid-4-col footer-links">
+                    <h3 class="title-sm">
+                        Links
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="service.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="grid-4-col footer-links">
+                    <h3 class="title-sm">Services</h3>
+                    <ul>
+                        <li>
+                            <a href="#">HTML / CSS</a>
+                        </li>
+                        <li>
+                            <a href="#">JavaScript</a>
+                        </li>
+                        <li>
+                            <a href="#">C++</a>
+                        </li>
+                        <li>
+                            <a href="#">Python</a>
+                        </li>
+                        <li>
+                            <a href="#">Java</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid-4-col footer-newsletter">
+                    <h3 class="title-sm">Subscribe</h3>
+                    <p class="text1">"Stay Updated! Subscribe to our newsletter and never miss out on our latest updates, offers, and tips. Join our community today!"</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p class="text1">
+                    Copyright &copy; 2024 <Span><a href="home.html">Decode.</a></Span>
+                </p>
+            </div>  
+        </div>
+    </footer>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwtIibh5ILyo20Wy3j2Qn0Sh673TDePcXDPNGn8oiinK5xqaIMm8axoL-drhiWzuixs/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+<script src="./js file/node.js"></script>
+<script src="./js file/isotope.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Ji Monsales</title>
+</head>
+<body>
+    
+    <footer class="footer">
+
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="./logo/Logo maker project.png" alt="">
+                </div>
+
+                <div class="link">
+                    <ul>
+                        <li>
+                            <a href="home.html">Home</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="service.html">Services</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="contact">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="contact-info">
+                        <h3 class="title1">Get in touch</h3>
+                        <p class="text">
+                            My contact information and location just mssage me.
+                        </p>
+
+                        <div class="information-wrap">
+                            <div class="information">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map marker-alt"></i>
+                                </div>
+                                <p class="info-text">
+                                    P-5 Don Ruben, San Jose, Dinagat Island Philippines
+                                </p>
+                            </div>
+
+                            <div class="information">
+                                <div class="contact-icon1">
+                                    <a href="www.email.com"><i class="fas fa-paper-plane"></i></a>
+                                </div>
+                                <p class="info-text">
+                                    xueshadaw@icloud.com
+                                </p>
+                            </div>
+
+                            <div class="information">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <p class="info-text">
+                                    +63 954 2373 458
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form name="submit-to-google-sheet">
+                            <h3 class="title1">Contact me</h3>
+                            <div class="row">
+                                <input type="text" class="contact-input" name="First Name" placeholder="First Name">
+                                <input type="text" class="contact-input" name="Last Name" placeholder="Last Name">
+                            </div>
+    
+                            <div class="row">
+                                <input type="text" class="contact-input" name="Phone" placeholder="Phone">
+                                <input type="email" class="contact-input" name="Email" placeholder="Email">
+                            </div>
+    
+                            <div class="row">
+                                <textarea name="Message" class="contact-input textarea" placeholder="Message"></textarea>
+                            </div>
+    
+                            <button class="btn" type="submit">Send</button>
+    
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="more">
+            <a href="index.html" class="btn">More Info</a>
+        </div>
+
+        </div>
+    </footer>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwtIibh5ILyo20Wy3j2Qn0Sh673TDePcXDPNGn8oiinK5xqaIMm8axoL-drhiWzuixs/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+<script src="./js file/node.js"></script>
+<script src="./js file/isotope.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>

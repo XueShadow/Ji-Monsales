@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Ji Monsales</title>
+</head>
+<body>
+
+    <section class="services section">
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="./logo/Logo maker project.png" alt="">
+                </div>
+
+                <div class="link">
+                    <ul>
+                        <li>
+                            <a href="home.html">Home</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="service.html">Services</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="section-header">
+                <p class="text">
+                    Offer Services
+                </p>
+            </div>
+
+            <div class="cards">
+                <div class="cards-wrap">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./logo/Logo maker project.png" class="icon" alt="">
+                            <h3 class="title-sm">
+                                Web Designer
+                            </h3>
+                            <p class="text">
+                                Creates the visual layout and design of websites.
+                            </p>
+                            <a href="#" class="btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-wrap">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./logo/Logo maker project.png" class="icon" alt="">
+                            <h3 class="title-sm">
+                                Web Developer
+                            </h3>
+                            <p class="text">
+                                Builds and maintains websites by writing code and ensuring functionality.
+                            </p>
+                            <a href="#" class="btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-wrap">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="./logo/Logo maker project.png" class="icon" alt="">
+                            <h3 class="title-sm">
+                                Logo Designer
+                            </h3>
+                            <p class="text">
+                                Creates visual symbols that represent brands and businesses.
+                            </p>
+                            <a href="#" class="btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwtIibh5ILyo20Wy3j2Qn0Sh673TDePcXDPNGn8oiinK5xqaIMm8axoL-drhiWzuixs/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+<script src="./js file/node.js"></script>
+<script src="./js file/isotope.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>

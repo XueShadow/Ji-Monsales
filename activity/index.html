@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: -20px;
+            padding: 30px;
+            font-family: "Poppins", sans-serif;
+            background: #333;
+            max-width: 100%;
+        }
+
+        .main {
+            width: 100%;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+            cursor: default;
+        }
+
+        .text {
+            color: #fff;
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        .title {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .headings {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+            cursor: default;
+        }
+
+        .paragraph {
+            width: 100%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+            cursor: default;
+        }
+
+        .links {
+            width: 100%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .links a {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .image {
+            width: 100%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .image img {
+            width: 330px;
+            height: 330px;
+        }
+
+        .colored.text {
+            width: 100%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .colored.text .text1 {
+            color: aqua;
+        }
+
+        .space.text {
+            width: 100%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .space.text .text2 {
+            font-weight: 500;
+        }
+
+        .horizontal.rules {
+            width: 100%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .line.break {
+            width: 100%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .pre.element{
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .style.attribute {
+            width: 100%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .title-sm {
+            font-size: 1rem;
+            color: red;
+            font-weight: 800;
+        }
+
+        .title-sm1 {
+            font-size: 2rem;
+            color: blue;
+            font-weight: 600;
+        }
+
+        .title-sm2 {
+            font-size: 3rem;
+            font-weight: 600;
+            color: pink;
+        }
+
+        .background-color {
+            width: 100%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .row1 {
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .row1 .title {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .row1 .text {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .row2 {
+            padding: 5px;
+            margin: 5px;
+            text-align: center;
+            background-color: aqua;
+        }
+
+        .row2 .title {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .row2 .text {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .text-color {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .title-a {
+            font-size: 2rem;
+            font-weight: 600;
+            color: pink;
+        }
+
+        .text-a {
+            font-size: 1rem;
+            font-weight: 500;
+            color: aquamarine;
+        }
+
+        .fonts {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .a {
+            font-size: 2.45rem;
+            font-weight: 500;
+            color: #fff;
+            font-style: oblique;
+        }
+
+        .text-size {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .b {
+            font-weight: 600;
+            font-size:  4rem;
+            color: #fff;
+        }
+
+        .text-alignment {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .c {
+            color: #fff;
+        }
+
+        .text-formatting {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .bold {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 600;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .italic {
+            font-size: 2rem;
+            font-weight: 500;
+            font-family: italic;
+            color: #fff;
+        }
+
+        .shes {
+            color: #fff;
+            font-size: 2rem;
+        }
+
+        .shes sub {
+            color: yellow;
+        }
+
+        .shes sup {
+            color: orange;
+        }
+
+        .b-strong.element {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .txt {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        .i-em.element {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .txt2 {
+            font-family: italic;
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        .txt1 {
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        .small {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .q {
+            color: #fff;
+            font-size: .5rem;
+        }
+
+        .mark {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        mark {
+            color: #333;
+            background: orange;
+        }
+
+        .del  {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        del {
+            color: red;
+        }
+
+        .ins {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .p {
+            font-size: 2rem;
+            color: green;
+        }
+
+        ins {
+            font-size: 2rem;
+            color: blue;
+        }
+
+        .html-color {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .a1 {
+            color: tomato;
+        }
+
+        .a2 {
+            color: orange;
+        }
+
+        .a3 {
+            color: dodgerblue;
+        }
+
+        .a4 {
+            color: mediumseagreen;
+        }
+
+        .a5 {
+            color: gray;
+        }
+
+        .a6 {
+            color: slateblue;
+        }
+
+        .a7 {
+            color: violet;
+        }
+
+        .a8 {
+            color: lightgray;
+        }
+
+        .background-color {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .bc {
+            padding: 10px;
+            margin: 10px;
+            font-size: 3rem;
+            color: #fff;
+            background: mediumseagreen;
+        }
+
+        .bc1 {
+            padding: 10px;
+            margin: 10px;
+            font-size: 1.2rem;
+            background: slateblue;
+            color: #fff;
+        }
+
+        .txt-color {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .tc {
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        .tc1 {
+            color: aqua;
+        }
+
+        .tc2 {
+            color: aquamarine;
+        }
+
+        .border-color {
+            width: 100%;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .b1 {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid aqua;
+        }
+
+        .b2 {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid palevioletred;
+        }
+
+        .b3 {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid orange;
+        }
+
+        .color-values {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .cv {
+            color: rgba(235, 65, 65, 0.8);
+        }
+
+        .cv1 {
+            color: #41daebcc;
+        }
+
+        .cv2 {
+            color: rgba(184, 235, 65, 0.8);
+        }
+
+        .cv3 {
+            color: rgba(38, 50, 160, 0.8);
+        }
+
+        .cv4 {
+            color: rgba(218, 65, 235, 0.8);
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        tr th {
+            background: orange;
+            color: #fff;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #fff;
+        }
+
+        tr td {
+            color: #fff;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #fff;
+        }
+
+        .emoji {
+            width: 100%;
+            text-align: center;
+            border: 1px solid #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .emo {
+            font-size: 3rem;
+            color: #fff;
+        }
+
+    </style>
+    <title>Activity</title>
+</head>
+<body>
+    
+    <div class="activity">
+        <div class="container">
+            <div class="main">
+                <h1 class="title">
+                    My First Heading
+                </h1>
+                <p class="text">
+                    My first paragraph.
+                </p>
+            </div>
+            <div class="headings">
+                <h1 class="title">
+                    This is heading 1
+                </h1>
+                <h2 class="title">
+                    This is heading 2
+                </h2>
+                <h3 class="title">
+                    This is heading 3
+                </h3>
+                <h4 class="title">
+                    This is heading 4
+                </h4>
+                <h5 class="title">
+                    This is heading 5
+                </h5>
+                <h6 class="title">
+                    This is heading 6
+                </h6>
+            </div>
+            <div class="paragraph">
+                <p class="text">This is a paragraph</p>
+                <p class="text">This is a paragraph</p>
+            </div>
+            <div class="links">
+                <a href="https://www.facebook.com/monsalesji.09">This is a link</a>
+            </div>
+            <div class="image">
+                <img src="a.jpg" alt="" width="104" height="142">
+            </div>
+            <div class="colored text">
+                <p class="text1">This is a red paragraph</p>
+            </div>
+            <div class="space text">
+                <p class="text2">
+                    This a paragraph
+                    contains a lot of lines
+                    in the source code,
+                    but the browser
+                    ignores it.
+                </p>
+                <p class="text2">
+                    This a paragraph
+                    contains               a lot of lines
+                    in the source                code,
+                    but the               browser
+                    ignores it.
+                </p>
+            </div>
+            <div class="horizontal rules">
+                <h1 class="title">This is heading 1</h1>
+                <p class="text">This is some text.</p>
+                <hr>
+                <h2 class="title">This is heading 2</h2>
+                <p class="text">This is some other text.</p>
+                <hr>
+            </div>
+            <div class="break paragraph">
+                <p class="text">
+                    This is <br> a paragraph <br> with line breaks.
+                </p>
+            </div>
+            <div class="line break">
+                <p class="text">
+                    My Bonnie lies over the ocean.
+
+                    My Bonnie lies over the sea.
+
+                    My Bonnie lies over the ocean.
+
+                    Oh, bring back my Bonnie to me.
+                </p>
+            </div>
+            <div class="pre element">
+                <pre class="text">
+                    My Bonnie lies over the ocean.
+
+                    My Bonnie lies over the sea.
+
+                    My Bonnie lies over the ocean.
+
+                    Oh, bring back my Bonnie to me.
+                </pre>
+            </div>
+            <div class="style attribute">
+                <h6 class="title-sm">I am Red</h6>
+                <h3 class="title-sm1">I am Blue</h3>
+                <h1 class="title-sm2">I am pink</h1>
+            </div>
+            <div class="background-color">
+                <div class="row1">
+                    <h1 class="title">This is a heading</h1>
+                    <p class="text">This is a paragraph</p>
+                </div>
+                <hr>
+                <div class="row2">
+                    <h1 class="title">This is a heading</h1>
+                    <p class="text">This is a paragraph</p>
+                </div>
+            </div>
+            <div class="text-color">
+                <h1 class="title-a">
+                    This is a heading
+                </h1>
+                <p class="text-a">
+                    This is a paragraph.
+                </p>
+            </div>
+            <div class="fonts">
+                <h1 class="a">
+                    This is a heading
+                </h1>
+                <p class="a">
+                    This is a paragraph.
+                </p>
+            </div>
+            <div class="text-size">
+                <h1 class="b">This is a heading</h1>
+                <p class="b">This is a paragraph.</p>
+            </div>
+            <div class="text-alignment">
+                <h1 class="c">
+                    Centered Heading
+                </h1>
+                <p class="c">
+                    Centered paragraph
+                </p>
+            </div>
+            <div class="text-formatting">
+                <p class="bold">
+                    <b>
+                        This text is bold
+                    </b>
+                </p>
+                <p class="italic">
+                    <i>
+                        This text is italic
+                    </i>
+                </p>
+                <p class="shes">This <sub> Script</sub> and <sup> superscript</sup></p>
+            </div>
+            <div class="b-strong element">
+                <b class="txt">This text is bold</b> <br>
+                <strong class="txt">This text is important!</strong>
+            </div>
+            <div class="i-em element">
+                <i class="txt2">This text is italic</i> <br>
+                <em class="txt1">This text is emphasized</em>
+            </div>
+            <div class="small">
+                <p class="q">
+                    This is some smaller text.
+                </p>
+            </div>
+            <div class="mark">
+                <p class="txt">Do not forget to buy <mark> milk</mark> today.</p>
+            </div>
+            <div class="del">
+                <p class="txt">
+                    My favorite color is <del> blue</del> red.
+                </p>
+            </div>
+            <div class="ins">
+                <p class="txt">My favorite color is <del class="p"> blue</del> <ins> red</ins>.</p>
+            </div>
+            <div class="html-color">
+                <h1 class="a1">Tomato</h1>
+                <h1 class="a2">Orange</h1>
+                <h1 class="a3">DodgerBlue</h1>
+                <h1 class="a4">MediumSeaGreen</h1>
+                <h1 class="a5">Gray</h1>
+                <h1 class="a6">StaleBlue</h1>
+                <h1 class="a7">Violet</h1>
+                <h1 class="a8">LightGray</h1>
+            </div>
+            <div class="background-color">
+                <h1 class="bc">Hello World</h1>
+                <p class="bc1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ducimus culpa sequi fugit quisquam excepturi. Culpa temporibus sit nemo, ullam eaque, iste, inventore itaque consequuntur architecto praesentium nisi explicabo magnam.</p>
+            </div>
+            <div class="txt-color">
+                <h1 class="tc">Hello World</h1>
+                <p class="tc1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eveniet, consequuntur possimus error, molestias cupiditate quisquam nisi laboriosam placeat incidunt eius rem delectus, mollitia nostrum ducimus illum tenetur minima officiis!</p>
+                <p class="tc2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus nisi et odit cumque corrupti obcaecati quibusdam dolor. Voluptate doloribus, id officia quas modi quod voluptatum laudantium natus accusantium iste.</p>
+            </div>
+            <div class="border-color">
+                <h1 class="b1">Hello World</h1>
+                <h1 class="b2">Hello World</h1>
+                <h1 class="b3">Hello World</h1>
+            </div>
+            <div class="color-values">
+                <h1 class="cv">Hello World</h1>
+                <h1 class="cv1">Hello World</h1>
+                <h1 class="cv2">Hello World</h1>
+                <h1 class="cv3">Hello World</h1>
+                <h1 class="cv4">Hello World</h1>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Company</th>
+                        <th>Address</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <td>nemsu</td>
+                        <td>rosario</td>
+                        <td>ph</td>
+                    </tr>
+                    <tr>
+                        <td>sti</td>
+                        <td>surigao</td>
+                        <td>ph</td>
+                    </tr>
+                    <tr>
+                        <td>csu</td>
+                        <td>butuan</td>
+                        <td>ph</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="emoji">
+                <p class="emo">
+                    Types of emoji &#128507, &#128508, &#128509, &#128512, &#128526.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
